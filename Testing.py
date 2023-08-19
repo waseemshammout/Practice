@@ -6,7 +6,6 @@
 strX = input('Enter a value for X ')
 x = int(strX)
 factors = []
-res = ''
 for i in range(x + 1):  # iteration x number of times
     if i != 0 and i != 1:  # skipping dividing by zero and by 1
         if x % i == 0:  # check if the remainder is zero
