@@ -1,6 +1,7 @@
 # tkinter Lesson 2
 
 import tkinter as tk
+from tkinter import ttk
 from tkinter.messagebox import showinfo
 
 
@@ -27,7 +28,7 @@ root.geometry('1000x400+150+10')
 # root.attributes('-alpha', 0.5)  # transparency of the window
 # root.attributes('-topmost', 1) # stay on top
 # Use lift() and lower() methods to move the window up and down of the window stacking order.
-btn = tk.Button(root, text="Show me window title", command=lambda: showinfo('Data from Access', root.title())).pack()
+btn = ttk.Button(root, text="Show me window title", command=lambda: showinfo('Data from Access', root.title())).pack()
 root.iconbitmap('./favicon.ico')
 
 root.mainloop()
